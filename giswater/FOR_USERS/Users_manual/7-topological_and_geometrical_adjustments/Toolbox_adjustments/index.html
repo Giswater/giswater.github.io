@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../../img/favicon.ico" />
+    <title>7- Topological and Geometrical Adjustments - Giswater Documentation</title>
+    <link rel="stylesheet" href="../../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "7- Topological and Geometrical Adjustments";
+        var mkdocs_page_input_path = "giswater/FOR_USERS/Users_manual/7-topological_and_geometrical_adjustments/Toolbox_adjustments.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../../..">
+          <img src="../../../../../assets/giswater2.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GisWater</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >FOR USERS</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../../">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Quick Start Guide</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Quick_startguide/quick_startguide/Startguide/">Start Guide</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Users Manual</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../../1-introduction/1.Introduction/">1- Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../2-Necessary_software/2.Necessary_software/">2- Necessary Software</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../3-Basic_work_rules/3.Basic_work_rules/">3- Basic Work Rules</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../4-Working_environment_QGIS/4.Working_environment_QGIS/">4- Working Environment QGIS</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../5-giswater_plugin/Giswater_plugin/">5- Giswater Plugin</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../6-Digitalization/Digitalize_network/">6- Digitalization</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">7- Topological and Geometrical Adjustments</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../8-hydraulic_model/Hydraulic_model/">8- Hydraulic Model</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../9-psectors/Planification_sectors/">9- Planification Sectors</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../10-netscenarios/Commercial_data/">10- Netscenarios</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Feature Data Model</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FeatureData_model/Datamodel/">Data Model</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Users Tricks</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Users_tricks/dbmodel_variables/dbmodel_variables/">DBModel Variables</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Users_tricks/profile_edition/profile_edition/">Profile Edition</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Users_tricks/profile_settings/profile_settings/">Profile Settings</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Users_tricks/python_variables/python_variables/">Python Variables</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >FOR ADMIN</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../FOR_ADMIN/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Logic DBModel</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/logic_dbmodel/ud/ud/">UD</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/logic_dbmodel/ws/ws/">WS</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Fisic DBModel</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_admin/role_admin/">Role Admin</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_basic/role_basic/">Role Basic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_edit/role_edit/">Role Edit</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_epa/role_epa/">Role EPA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_om/role_om/">Role OM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_plan/role_plan/">Role Plan</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/fisic_dbmodel/role_system/role_system/">Role System</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >System Variables</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/system_variables/dbmodel/dbmodel/">DBModel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/system_variables/qgis_project/qgis_project/">QGIS Project</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Protocols</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/create_fields/create_fields/">Create Fields</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/forms_configurations/forms_configurations/">Forms Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/management/management/">Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/mapzones_configurations/mapzones_configurations/">Mapzones Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/mincut_configurations/mincut_configurations/">Mincut Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/raster_loading/raster_loading/">Raster Loading</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/admin_protocols/schema_architecture/schema_architecture/">Schema Architecture</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Interoperability</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/Interoperability/crm/crm/">CRM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/Interoperability/gmao/gmao/">GMAO</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/Interoperability/lost_control/lost_control/">Lost Control</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_ADMIN/Interoperability/scada/scada/">SCADA</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >FOR DEV</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../FOR_DEV/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >PyGiswater</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_DEV/pygiswater/functions_methods/">Functions and Methods</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >PlGiswater</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../FOR_DEV/pigiswater/functions_methods/">Functions and Methods</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">QWC2 for Giswater</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >FOR USERS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Quick Start Guide</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Quick_startguide/quick_startguide/Startguide/">Start Guide</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Users Manual</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/1-introduction/1.Introduction/">1- Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/2-Necessary_software/2.Necessary_software/">2- Necessary Software</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/3-Basic_work_rules/3.Basic_work_rules/">3- Basic Work Rules</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/4-Working_environment_QGIS/4.Working_environment_QGIS/">4- Working Environment QGIS</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/5-giswater_plugin/Giswater_plugin/">5- Giswater Plugin</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/6-Digitalization/Digitalize_network/">6- Digitalization</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/7-topological_and_geometrical_adjustments/Toolbox_adjustments/">7- Topological and Geometrical Adjustments</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/8-hydraulic_model/Hydraulic_model/">8- Hydraulic Model</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/9-psectors/Planification_sectors/">9- Planification Sectors</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_USERS/Users_manual/10-netscenarios/Commercial_data/">10- Netscenarios</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >FOR ADMIN</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Logic DBModel</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/logic_dbmodel/ud/ud/">UD</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/logic_dbmodel/ws/ws/">WS</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Fisic DBModel</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_admin/role_admin/">Role Admin</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_basic/role_basic/">Role Basic</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_edit/role_edit/">Role Edit</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_epa/role_epa/">Role EPA</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_om/role_om/">Role OM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_plan/role_plan/">Role Plan</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/fisic_dbmodel/role_system/role_system/">Role System</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Protocols</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/create_fields/create_fields/">Create Fields</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/forms_configurations/forms_configurations/">Forms Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/management/management/">Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/mapzones_configurations/mapzones_configurations/">Mapzones Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/mincut_configurations/mincut_configurations/">Mincut Configurations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/raster_loading/raster_loading/">Raster Loading</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../../../giswater_qwc2/FOR_ADMIN/admin_protocols/schema_architecture/schema_architecture/">Schema Architecture</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../..">Giswater Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">GisWater</li>
+          <li class="breadcrumb-item">FOR USERS</li>
+          <li class="breadcrumb-item">Users Manual</li>
+      <li class="breadcrumb-item active">7- Topological and Geometrical Adjustments</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <script>
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .wy-nav-content {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 auto !important;
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+
+<h1 id="7-topological-and-geometrical-adjustments-giswater-toolbox"><strong>7. Topological and Geometrical Adjustments - Giswater Toolbox</strong></h1>
+<p><strong>chapter aims to present Giswater Toolbox, which can be applied to the identification and correction of missing or inconsistent topological data of the network inventory information.</strong></p>
+<p>Giswater toolbox is a very useful tool,  as it enables the user, just by clicking on its tools, to visualize temporary vector layers that spatially show where are the topological and geometrical inconsistencies of the network. Moreover, through the attribute tables, the user can automatically or manually calculate the necessary corrections required for a hydraulic model to run.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 1" src="images/figure1_toolbox.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Illustration of Giswater auxiliary toolbox in an UD scheme for finding topological inconsistencies on the CSS network</em></td>
+</tr>
+</tbody>
+</table>
+<p>By topological data, we mean all topological and geometrical relationships between nodes and arcs or other geometrical elements of the network. They have attributes values, like depth, top elevation, arc slope, and so on. These attributes are very well explained on the representative image below, for a UD schema.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 2" src="images/figure2_attributes.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Illustration of network topological data for UD schema.</em></td>
+</tr>
+</tbody>
+</table>
+<p>This information can also be verified, element by element, using the info button. For nodes, it is also possible to calculate node depth and top elevation with the interpolation and extrapolation tool, just as shown below.</p>
+<p><img alt="figure 3" src="images/figure3_dialog.avif" /></p>
+<p>For example, for a CSS (combined sewer system - UD schema), the first changes on the network can be based on the DEM raster data, interpolation, or extrapolation of elevation values from nearby nodes by specific giswater tools. Then, after completing all the missing information for the node layer, another check on arc slopes and negative offset values can be done, by the use of Giswater toolbox. Changes in the arc bottom elevation when entering or exiting a node, or the node depth and bottom data, enable the user to easily set hydraulic consistent slopes and topological information for the nodes and arcs. All those changes can be saved as customer data, keeping, at  the same time, the inventory data unmodified, when building hydraulic models.</p>
+<p>Here below you can find some examples of the application of the toolbox for finding topological inconsistencies, and other typical geometrical incongruities on the inventory data of the network system:</p>
+<p><strong>1. CHECK PROJECT</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 4" src="images/figure4_project.avif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Audit check information about hydraulic model</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Check arcs without node start/end</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 5" src="images/figure5_arcs.avif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Check arcs without node start/end tool</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 6" src="images/figure6_layers.avif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Temporary layers with arcs without nodes in Qgis ToC and Canvas, as well as info log tab with the list of the arcs that present this type of problem.</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Slope inconsistency</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="figure 7" src="images/figure7_slope.avif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Generation of slope inconsistency of arc, creating temporary layer for all the incongruities found and attribute metadata information</em></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../6-Digitalization/Digitalize_network/" class="btn btn-neutral float-left" title="6- Digitalization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../8-hydraulic_model/Hydraulic_model/" class="btn btn-neutral float-right" title="8- Hydraulic Model">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../6-Digitalization/Digitalize_network/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../8-hydraulic_model/Hydraulic_model/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../../..";</script>
+    <script src="../../../../../js/theme_extra.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+      <script src="../../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
