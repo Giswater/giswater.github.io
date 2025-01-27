@@ -3,9 +3,10 @@ theme:
   name: readthedocs
   logo: assets/giswater2.png
 
-  markdown_extensions:
+markdown_extensions:
     - attr_list
     - admonition
+
 
 nav:
   - Home: index.md
