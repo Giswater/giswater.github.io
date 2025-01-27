@@ -15,7 +15,7 @@
 
 **Description of Giswater configuration variables**
 
-The configuration and customization possibilities in the Giswater environment are exceptionally large, since it is intended to meet most of the needs of the different users by integrating all the processes in the same code.
+The configuration and customization possibilities in the Giswater environment  are exceptionally large, since it is intended to meet most of the needs of the different users by integrating all the processes in the same code.
 
 Through the tables *config_param_system* (for system configurations, which will affect the entire schema regardless of the user) and *config_param_user* (for configurations per user) many work processes can be customized.
 
