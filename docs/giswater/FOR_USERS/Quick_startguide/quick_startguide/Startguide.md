@@ -10,6 +10,7 @@
     document.head.appendChild(style);
 </script>
 
+
 # Steps to create your first project
 
 ## Creating Schema and project using Giswater plugin on Qgis:
